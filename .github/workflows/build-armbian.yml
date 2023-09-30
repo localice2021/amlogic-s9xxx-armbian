@@ -268,8 +268,8 @@ jobs:
         with:
           tag: ${{ steps.clean.outputs.build_tag }}
           artifacts: build/output/images/*
-          allowUpdates: true
-          token: ${{ secrets.GH_TOKEN }}
+          # allowUpdates: true
+          # token: ${{ secrets.GH_TOKEN }}
 
       - name: Rebuild Armbian
         uses: ophub/amlogic-s9xxx-armbian@main
